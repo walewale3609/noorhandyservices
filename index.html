@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Noor Handy Services | NJ Remodeling & Handyman</title>
-<meta name="description" content="Noor Handy Services offers expert bathroom remodeling, flooring, handyman work, and home additions in New Jersey. Contact us today!">
+<title>Noor Handy Services | Modern Contracting NJ</title>
+<meta name="description" content="Noor Handy Services offers expert bathroom remodeling, flooring, handyman work, and home additions in New Jersey.">
 
 <!-- Google Analytics (replace G-XXXXXXXXXX with your ID) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -16,35 +16,205 @@
 </script>
 
 <style>
-  body {font-family: Arial, sans-serif; margin:0; padding:0; color:#333;}
-  header {background:#004080; color:white; padding:20px 0; text-align:center;}
-  nav {background:#0066cc; display:flex; justify-content:center; padding:10px 0; position:sticky; top:0; z-index:10;}
-  nav a {color:white; text-decoration:none; margin:0 15px; font-weight:bold;}
-  nav a:hover{text-decoration:underline;}
-  .hero {background:url('https://via.placeholder.com/1200x400') no-repeat center/cover; height:400px; display:flex; align-items:center; justify-content:center; color:white; text-shadow:2px 2px 4px #000; font-size:2em; font-weight:bold; text-align:center;}
-  .section {padding:50px 20px; max-width:1000px; margin:auto;}
-  h2 {color:#004080; text-align:center; margin-bottom:40px;}
-  .services, .testimonials, .gallery {display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:30px;}
-  .service-item, .testimonial {background:#f2f2f2; padding:20px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
-  .service-item h3 {color:#004080;}
-  .contact form {display:flex; flex-direction:column;}
-  .contact input, .contact textarea {padding:10px; margin:10px 0; font-size:1em; width:100%; box-sizing:border-box;}
-  .contact button {background:#004080; color:white; border:none; padding:15px; font-size:1em; cursor:pointer;}
-  .contact button:hover{background:#0066cc;}
-  footer {background:#004080; color:white; text-align:center; padding:15px 0;}
-  .gallery img {width:100%; border-radius:10px;}
-  .testimonial p {font-style:italic;}
-  .click-to-call {text-align:center; margin:20px 0;}
-  .click-to-call a {color:white; background:#ff6600; padding:10px 20px; border-radius:5px; text-decoration:none; font-weight:bold;}
-  .click-to-call a:hover {background:#ff8533;}
-  iframe {border-radius:10px;}
+/* GLOBAL STYLES */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin:0;
+  padding:0;
+  background:#f4f4f4;
+  color:#222;
+}
+
+a {text-decoration:none; color:inherit;}
+
+header {
+  background: linear-gradient(135deg, #1c1c1c, #333);
+  color:white;
+  text-align:center;
+  padding:60px 20px;
+}
+
+header h1 {
+  font-size:3em;
+  margin:0;
+}
+
+header p {
+  font-size:1.2em;
+  opacity:0.85;
+  margin-top:10px;
+}
+
+/* NAVIGATION */
+nav {
+  background:#222;
+  display:flex;
+  justify-content:center;
+  padding:12px 0;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+
+nav a {
+  color:white;
+  margin:0 20px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+nav a:hover {
+  color:#ff6600;
+}
+
+/* HERO SECTION */
+.hero {
+  background:url('https://via.placeholder.com/1200x400') no-repeat center/cover;
+  height:400px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  text-shadow:2px 2px 5px rgba(0,0,0,0.7);
+  font-size:2.2em;
+  font-weight:bold;
+  text-align:center;
+}
+
+/* MAIN SECTIONS */
+.section {
+  max-width:1100px;
+  margin:auto;
+  padding:60px 20px;
+}
+
+h2 {
+  text-align:center;
+  font-size:2em;
+  color:#1c1c1c;
+  margin-bottom:50px;
+}
+
+/* SERVICES GRID */
+.services, .gallery, .testimonials {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.service-item, .testimonial {
+  background:white;
+  padding:30px 20px;
+  border-radius:12px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.service-item:hover, .testimonial:hover {
+  transform:translateY(-5px);
+}
+
+.service-item h3 {
+  color:#ff6600;
+  margin-bottom:15px;
+}
+
+.testimonial p {
+  font-style:italic;
+  opacity:0.85;
+}
+
+.testimonial strong {
+  display:block;
+  margin-top:10px;
+  color:#333;
+}
+
+/* GALLERY IMAGES */
+.gallery img {
+  width:100%;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.gallery img:hover {
+  transform:scale(1.03);
+}
+
+/* CONTACT FORM */
+.contact form {
+  display:flex;
+  flex-direction:column;
+}
+
+.contact input, .contact textarea {
+  padding:12px;
+  margin:12px 0;
+  font-size:1em;
+  border-radius:6px;
+  border:1px solid #ccc;
+}
+
+.contact button {
+  background:#ff6600;
+  color:white;
+  padding:15px;
+  font-size:1em;
+  border:none;
+  cursor:pointer;
+  border-radius:6px;
+  transition:0.3s;
+}
+
+.contact button:hover {
+  background:#e65c00;
+}
+
+/* CLICK TO CALL BUTTON */
+.click-to-call {
+  text-align:center;
+  margin:30px 0;
+}
+
+.click-to-call a {
+  color:white;
+  background:#1c1c1c;
+  padding:15px 30px;
+  border-radius:8px;
+  font-weight:bold;
+  display:inline-block;
+  transition:0.3s;
+}
+
+.click-to-call a:hover {
+  background:#333;
+}
+
+/* FOOTER */
+footer {
+  background:#222;
+  color:white;
+  text-align:center;
+  padding:25px 20px;
+  margin-top:30px;
+  font-size:0.95em;
+}
+
+/* GOOGLE MAPS */
+iframe {
+  border-radius:12px;
+  width:100%;
+  height:400px;
+  border:none;
+  margin-top:20px;
+}
 </style>
 </head>
 <body>
 
 <header>
   <h1>Noor Handy Services</h1>
-  <p>Expert Bathroom Remodeling, Flooring, Handyman Work, and Home Additions in NJ</p>
+  <p>Modern Remodeling, Flooring & Home Additions in New Jersey</p>
 </header>
 
 <nav>
@@ -55,7 +225,7 @@
 </nav>
 
 <div class="hero">
-  Transforming Homes, One Project at a Time
+  Transforming Homes with Precision & Style
 </div>
 
 <section class="section" id="services">
@@ -63,25 +233,25 @@
   <div class="services">
     <div class="service-item">
       <h3>Bathroom Remodeling</h3>
-      <p>From modern updates to full remodels, we create bathrooms that are functional and beautiful.</p>
+      <p>From modern updates to full remodels, we create bathrooms that are functional and stylish.</p>
     </div>
     <div class="service-item">
       <h3>Flooring & Epoxy</h3>
-      <p>Durable flooring solutions that enhance your home's look and longevity.</p>
+      <p>Durable and aesthetic flooring solutions that last for years.</p>
     </div>
     <div class="service-item">
       <h3>Handyman Services</h3>
-      <p>Reliable repairs and maintenance for your home, big or small.</p>
+      <p>Reliable repairs, installations, and maintenance for your home.</p>
     </div>
     <div class="service-item">
       <h3>Home Additions</h3>
-      <p>Patios, decks, and room additions that expand your living space.</p>
+      <p>Decks, patios, and room expansions designed for comfort and functionality.</p>
     </div>
   </div>
 </section>
 
 <section class="section" id="gallery">
-  <h2>Before & After Gallery</h2>
+  <h2>Project Gallery</h2>
   <div class="gallery">
     <img src="https://via.placeholder.com/400x300?text=Before+1" alt="Before Project 1">
     <img src="https://via.placeholder.com/400x300?text=After+1" alt="After Project 1">
@@ -91,7 +261,7 @@
 </section>
 
 <section class="section" id="testimonials">
-  <h2>Testimonials</h2>
+  <h2>Client Testimonials</h2>
   <div class="testimonials">
     <div class="testimonial">
       <p>"Noor Handy Services transformed our bathroom beyond expectations! Highly recommended."</p>
@@ -122,7 +292,7 @@
   <!-- Google Maps Embed -->
   <iframe 
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.111111111!2d-74.000000!3d40.000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x0000000000000000!2sYour+Business+Location!5e0!3m2!1sen!2sus!4v0000000000000" 
-    width="100%" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
   </iframe>
 </section>
 
