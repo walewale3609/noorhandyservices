@@ -37,11 +37,6 @@
   .testimonials { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
   .testimonial { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 3px 6px rgba(0,0,0,0.1); font-style: italic; }
 
-  form { background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 3px 8px rgba(0,0,0,0.1); max-width: 600px; margin: auto; }
-  form input, form textarea { width: 100%; padding: 12px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; font-size: 1em; }
-  form button { background: #2a9d8f; color: #fff; border: none; padding: 12px 25px; border-radius: 5px; font-size: 1em; cursor: pointer; transition: 0.3s; }
-  form button:hover { background: #e76f51; }
-
   iframe { width: 100%; height: 300px; border: none; border-radius: 10px; margin-top: 20px; }
 
   footer { background: #264653; color: #fff; text-align: center; padding: 20px 10px; }
@@ -51,19 +46,18 @@
 
 <header>
     <nav>
-        <a href="#hero"><img src="logo.png" alt="Noor Handy Services Logo" class="logo"></a>
+        <a href="#hero"><img src="logo.png" alt="Noor Handy Services" class="logo"></a>
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
         <a href="#location">Location</a>
         <a href="#testimonials">Testimonials</a>
-        <a href="#quote">Request a Quote</a>
     </nav>
 </header>
 
 <section class="hero" id="hero">
     <h1>Noor Handy Services</h1>
     <p>Your trusted handyman in Central New Jersey — Furniture, TV Mounting, Flooring, Home & Auto Repairs</p>
-    <button onclick="window.location='#contact'">Book Your Service</button>
+    <button onclick="window.location='#contact'">Call Now</button>
 </section>
 
 <section id="services">
@@ -105,17 +99,6 @@
         <p><strong>Hours:</strong> Mon-Sat, 8am – 6pm</p>
         <button onclick="window.location='tel:8482283972'">Call Now</button>
     </div>
-</section>
-
-<section id="quote">
-    <h2>Request a Quote</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="_replyto" placeholder="Your Email" required>
-        <input type="tel" name="phone" placeholder="Phone Number" required>
-        <textarea name="message" rows="5" placeholder="Describe your handyman request" required></textarea>
-        <button type="submit">Submit Request</button>
-    </form>
 </section>
 
 <section id="location">
